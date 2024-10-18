@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping Application</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #343a40;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fff;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        #messages p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Run Your Script</h1>
+    <form id="scriptForm">
+        <label for="script">Choose a script:</label>
+        <select id="script" name="script">
+            <option value="scraper_1">Uniform Advantage</option>
+            <option value="scraper_2">Wear Figs</option>
+            <option value="scraper_3">Scrub Harvard</option>
+        </select><br>
+
+        <label for="keyword">Keyword:</label>
+        <input type="text" id="keyword" name="keyword" required><br>
+
+        <label for="num_products">Number of Products:</label>
+        <input type="number" id="num_products" name="num_products" required><br>
+
+        <button type="submit">Run Script</button>
+    </form>
+
+    <h2>Messages:</h2>
+    <div id="messages"></div>
+
+    <script>
+        document.getElementById('scriptForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const formData = new FormData(this);
+            fetch('/run-script', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Start listening for messages from the server
+                    startListening(data.stream_url);
+                } else {
+                    console.error('Error:', data.error);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        function startListening(streamUrl) {
+            const eventSource = new EventSource(streamUrl);
+
+            eventSource.onmessage = function(event) {
+                const messageDiv = document.getElementById('messages');
+                messageDiv.innerHTML += `<p>${event.data}</p>`; // Append the received message
+            };
+
+            eventSource.onerror = function(event) {
+                console.error('Error occurred:', event);
+                eventSource.close(); // Close connection on error
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<div class="section-template--22071752720704__product-content product-content customstyletemplate--22071752720704__product-content aos-init aos-animate" data-aos="fade-up"><style data-shopify="">.customstyletemplate--22071752720704__product-content{
+      background-color:;
+      padding: 48px 0px 20px 0px;
+      margin: 0px 0px 0px 0px;
+      
+    }@media (max-width:750px){
+      .customstyletemplate--22071752720704__product-content{
+        padding: 32px 0px 32px 0px;
+        margin: 0px 0px 0px 0px
+      }
+    }</style><div class="container">
+        <div class="row justify-content-center">
+            <div id="nav-tab-info" class="nav-tab-info col-md-7 col-12 aos-init aos-animate" data-aos="fade-up">
+                <div class="nav nav-tabs  justify-content-start " role="tablist"><a class="nav-item nav-link disabled-anchor" href="#gtab6889c9ba-caef-4edd-9757-6711505cb095" data-toggle="tab" role="tab" aria-selected="false">
+                                    Description
+                                </a><a class="nav-item nav-link  disabled-anchor" href="#gtabb69a53cf-5bc1-4b18-add3-92af436f966c" data-toggle="tab" role="tab" aria-selected="false">
+                                    Features
+                                </a><a class="nav-item nav-link  disabled-anchor" href="#gtab450a0011-a13e-4bad-9fbb-454bc0a862b4" data-toggle="tab" role="tab" aria-selected="false">
+                                    Materials
+                                </a><a class="nav-item nav-link  disabled-anchor active" href="#gtabf4c1b859-6506-4354-b686-25d6efffda01" data-toggle="tab" role="tab" aria-selected="true">
+                                    Care
+                                </a></div>
+                <div class="tab-content"><div class="tab-pane fade" id="gtab6889c9ba-caef-4edd-9757-6711505cb095" role="tabpanel">
+                                    
+                                </div><div class="tab-pane fade" id="gtabb69a53cf-5bc1-4b18-add3-92af436f966c" role="tabpanel">
+                                    <ul><li>Breathable</li><li>Easy to take on and off</li><li>Adjustable buckles</li><li>Ruggedly durable: supremely comfortable</li></ul>
+                                    
+                                </div><div class="tab-pane fade" id="gtab450a0011-a13e-4bad-9fbb-454bc0a862b4" role="tabpanel">
+                                    <p>Our scrubs are crafted from a premium blend of fabrics designed to keep you comfortable and confident all day long. Here’s what makes our material truly stand out:</p><p></p><ul><li><strong>Ultimate Softness</strong><br>Slip into the luxuriously soft feel of our scrubs, made with a unique blend that’s gentle on your skin. Imagine the comfort of your favorite loungewear, now in your work attire.</li><li><strong>Breathable and Lightweight</strong><br>No more overheating during those long shifts. Our fabric is engineered to be breathable and lightweight, allowing for maximum airflow and keeping you cool under pressure.</li><li><strong>4-Way Stretch for Freedom of Movement</strong><br>Experience the freedom to move without restriction. Our scrubs feature 4-way stretch technology that adapts to your every move, whether you’re bending, stretching, or reaching for something on the top shelf.</li></ul>
+                                    
+                                </div><div class="tab-pane fade active show" id="gtabf4c1b859-6506-4354-b686-25d6efffda01" role="tabpanel">
+                                    <p>Features our premium COREq fabric with four-way stretch, anti-wrinkle and a lot of class.</p><ul><li>62% rayon&nbsp;</li><li>32% nylon&nbsp;</li><li>6% spandex.</li></ul><p>Wash cold inside-out, tumble dry low</p>
+                                    
+                                </div></div>
+            </div><div class="col-md-5 col-12 aos-init aos-animate" data-aos-delay="200" data-aos="fade-up">
+                      <div class="product-block product-related mt-lg-0 mt-4 ">
+                            <product-pairs class="product-pairs isolate product-pairs--loaded" data-id="template--22071752720704__product-content" data-url="/recommendations/products?section_id=template--22071752720704__product-content&amp;product_id=9515631968576&amp;limit=3&amp;intent=complementary">
+                              
+                            </product-pairs>
+                        </div>
+                    </div></div>
+    </div>
+</div>
